@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include "Pieza.h"
 #include "Torre.h"
 #include "Tablero.h"
@@ -21,4 +22,9 @@ int main(void)
     //Imprimir tablero
     Tablero t;
     t.imprimirTablero();
+
+    string miMovimiento;
+    cout << endl << "Ingrese el movimiento a realizar (ej: Rbe1): ";
+    cin >> miMovimiento;
+    cout << "Movimiento realizado: " << miMovimiento;
 }
